@@ -1,0 +1,17 @@
+{
+  "name": "telegram-bot",
+  "version": "0.0.1",
+  "description": "telegram bot for download high quality audio",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "dev": "node ./app.js",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Nayan",
+  "license": "MIT"
+}
