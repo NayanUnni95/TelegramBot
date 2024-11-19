@@ -8,11 +8,7 @@ const messageController = (bot, msg) => {
     switch (command) {
       case '/start':
         const text = `Discover and download your favorite songs with a simple search.`;
-        bot.sendMessage(
-          chatId,
-          `Hello, ${msg.chat.first_name} 
-          ${text}`
-        );
+        bot.sendMessage(chatId, `Hello, ${msg.chat.first_name} \n${text}`);
         break;
       case '/settings':
         bot.sendMessage(chatId, 'Feature development in progress...');
