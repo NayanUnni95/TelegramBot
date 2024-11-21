@@ -3,7 +3,7 @@ require('dotenv').config();
 const { eventController } = require('./src/controller/eventController');
 const { messageController } = require('./src/controller/messageController');
 
-const token = process.env.Token;
+const token = process.env.Token || null;
 const bot = new TelegramBot(token, {
   polling: { interval: 3000, autoStart: true, params: { timeout: 30 } },
 });

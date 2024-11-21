@@ -11,8 +11,8 @@
     "nodemon": "^3.1.7"
   },
   "scripts": {
-    "dev": "node ./app.js",
-    "start": "nodemon ./app.js"
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
   },
   "author": "Nayan",
   "license": "MIT"
