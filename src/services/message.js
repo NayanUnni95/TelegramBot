@@ -1,5 +1,5 @@
 const { searchSongData } = require('../apis/searchSong');
-const { updateData } = require('../models/Response');
+const { updateData } = require('../models/response');
 
 const forwardSongDetails = (bot, msg) => {
   const chatId = msg.chat.id;
