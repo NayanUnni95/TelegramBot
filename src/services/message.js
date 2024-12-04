@@ -1,5 +1,4 @@
 const { searchSongData } = require('../apis/searchSong');
-const { updateData } = require('../models/response');
 
 const forwardSongDetails = (bot, msg) => {
   const chatId = msg.chat.id;
@@ -23,7 +22,6 @@ const forwardSongDetails = (bot, msg) => {
             : [[{ text: `Empty Result`, callback_data: 'null' }]],
         },
       };
-      updateData(res.data.results);
       return bot.sendMessage(
         chatId,
         `Here is What I Found For Your Query: ${text}`,
